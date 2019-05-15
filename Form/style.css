@@ -3,6 +3,7 @@ body {
 	width: 100%;
 	height: 100vh;
 
+
 }
 .wrapper {
 	display: flex;
@@ -19,6 +20,10 @@ body {
 	background-size: 100% 100%;
 }
 
+.error {
+
+
+}
 
 .form {
 	width: 50%;
@@ -45,16 +50,12 @@ body {
 
 label {
 	color: #d3bb89;
-	
+	font-size: 20px;
 }
 
 span {
 	color:#fef8eb;
 	font-size:13px;
-}
-input {
-	width: 100%;
-	margin-top: 15px;
 }
 
 form {
@@ -65,12 +66,26 @@ form {
     padding-left: 20%;
 }
 
-.form_part {
-	margin-top: 30px;
-	padding-bottom: 15px;
+.firstForm {
 	display: flex;
 	flex-direction: column;
-	border-bottom: 1px solid #d3bb89;
+}
+.secondForm--invisible {
+	display: none;
+	flex-direction: column;
+}
+
+.secondForm--visible {
+	display: flex;
+	flex-direction: column;
+}
+.form_part {
+	margin-top: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #c19a49;
 
 }
 
@@ -155,17 +170,10 @@ form {
 	border-radius: 10%;
 	font-size: 20px;
 }
-
-input[type="checkbox"]:checked + .checkboxlabel::before {
-	background-image: url("images/checkbox.png");
-	background-repeat: no-repeat;
-	background-size: 20px 20px;
-
+label {
+	margin-top: 10px;
 }
 
-input[type="email"], 
-input[type="password"],
-input[type="text"],
 select,
 textarea {
 	margin-top:10px;
@@ -175,8 +183,36 @@ textarea {
 	color:#d3bb89;
 }
 
+.input {
+	margin-top:10px;
+	background-color: #202020;
+	border: none;
+	outline: none;
+	color:#d3bb89;
+
+}
+
+.show {
+	display: block;
+	color:red;
+}
+
+.hide {
+	display: none;
+}
+
+.input--border {
+	padding-bottom: 15px;
+	margin-bottom:5px;
+	border-bottom: 1px solid #c19a49;
+}
+.input--invalid {
+	border-bottom: 1px solid #d60d10;
+}
+
 input[type="submit"] {
-	height: 40px;
+	height: 50px;
+	margin-top: 15px;
 	background-color:  #c19a49;
 	border: none;
 	color: white;
@@ -211,6 +247,7 @@ select {
 textarea {
 	resize: none;
 }
+
 
 @media screen and (max-width: 600px) {
 	.wrapper {
