@@ -1,65 +1,58 @@
 body {
-	margin:0;
-	width: 100%;
-	height: 100vh;
-
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "EB Garamond", serif;
 
 }
+
 .wrapper {
-	display: flex;
-	height: 100%;
-	width: 100%;
-	font-family: serif,sans-serif;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
 }
 
 .photo {
-	width: 50%;
-	height: 100%;
-	background-image: url("images/sobachka.jpeg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-.error {
-
-
+    width: 50%;
+    background: url("images/maxresdefault.jpg") center;
+    background-size: cover;
 }
 
 .form {
-	width: 50%;
-	background-color: #202020;
-	display: flex;
-	flex-direction: column;
-
+    width: 50%;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
 }
 
 @font-face {
-	font-family:Game Of Thrones;
-	src: url("fonts/Game Of Thrones.ttf");
+    font-family: "Game Of Thrones";
+    src: url("fonts/Game Of Thrones.ttf");
 }
 
 .sign {
-	margin-top: 100px;
-	margin-bottom: 50px;
-	font-family: Game Of Thrones,serif;
-	color: #d3bb89;
-	text-align: center;
-	font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: "Game Of Thrones", serif;
+    color: #d3bb89;
+    text-align: center;
+    font-size: 30px;
 
 }
 
 label {
-	color: #d3bb89;
-	font-size: 20px;
+    color: #d3bb89;
+    font-size: 20px;
 }
 
 span {
-	color:#fef8eb;
-	font-size:13px;
+    color: #fef8eb;
+    font-size: 13px;
 }
 
 form {
-	width: 60%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -67,194 +60,210 @@ form {
 }
 
 .firstForm {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 .secondForm--invisible {
-	display: none;
-	flex-direction: column;
+    display: none;
+    flex-direction: column;
 }
 
 .secondForm--visible {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 .form_part {
-	margin-top: 20px;
-	padding-bottom: 15px;
-	margin-bottom: 10px;
-	display: flex;
-	flex-direction: column;
-	border-bottom: 1px solid #c19a49;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #c19a49;
 
 }
 
 .box {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 
-
 .container {
-	display: block;
-	position: relative;
-	padding-left: 35px;
-	margin-bottom: 12px;
-	cursor: pointer;
-	font-size: 22px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* Hide the browser's default checkbox */
 .container input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 /* Create a custom checkbox */
 .checkmark {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 25px;
-	width: 25px;
-	background-color: #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-	background-color: #d3bb89;
+    background-color: #d3bb89;
 }
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-	background-color: #d3bb89;
+    background-color: #d3bb89;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-	content: "";
-	position: absolute;
-	display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 /* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
-	display: block;
+    display: block;
 }
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-	left: 9px;
-	top: 5px;
-	width: 5px;
-	height: 10px;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 .checkboxlabel::before {
-	content: ''; 
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background-color: #d3bb89;
-	border-radius: 10%;
-	font-size: 20px;
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #d3bb89;
+    border-radius: 10%;
+    font-size: 20px;
 }
+
 label {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 select,
 textarea {
-	margin-top:10px;
-	background-color: #202020;
-	border: none;
-	outline: none;
-	color:#d3bb89;
+    margin-top: 10px;
+    background-color: #202020;
+    border: none;
+    outline: none;
+    color: #d3bb89;
 }
 
 .input {
-	margin-top:10px;
-	background-color: #202020;
-	border: none;
-	outline: none;
-	color:#d3bb89;
-
+    margin-top: 10px;
+    background-color: #202020;
+    border: none;
+    outline: none;
+    color: #d3bb89;
 }
 
 .show {
-	display: block;
-	color:red;
+    display: block;
+    color: red;
 }
 
 .hide {
-	display: none;
+    display: none;
 }
 
 .input--border {
-	padding-bottom: 15px;
-	margin-bottom:5px;
-	border-bottom: 1px solid #c19a49;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #c19a49;
 }
+
 .input--invalid {
-	border-bottom: 1px solid #d60d10;
+    border-bottom: 1px solid #d60d10;
 }
 
 input[type="submit"] {
-	height: 50px;
-	margin-top: 15px;
-	background-color:  #c19a49;
-	border: none;
-	color: white;
+    height: 50px;
+    margin-top: 15px;
+    background-color: #c19a49;
+    border: none;
+    color: white;
 }
 
 .sign2 {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	font-family: Game Of Thrones;
-	color: #d3bb89;
-	text-align: center;
-	font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Game Of Thrones", "sans-serif";
+    color: #d3bb89;
+    text-align: center;
+    font-size: 30px;
 
 }
 
 .info {
-	padding-left: 5px;
-	width: 30%;
-	margin-left: 20%;
-	border-left:1px solid #d3bb89; 
+    padding-left: 5px;
+    width: 30%;
+    margin-left: 20%;
+    border-left: 1px solid #d3bb89;
 }
 
 select {
-	margin-top: 10px;
-	color:#d3bb89;
-	-webkit-appearance: none;
-  	-moz-appearance: none;
- 	appearance: none;
-
+    margin-top: 10px;
+    color: #d3bb89;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 textarea {
-	resize: none;
+    resize: none;
 }
 
 
-@media screen and (max-width: 600px) {
-	.wrapper {
-		display: block;
-	}
-	.photo, .form {
-		width: 100%;
-	}
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        display: block;
+    }
 
+    .photo, .form {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .photo {
+        background-size: cover;
+    }
+
+    .firstForm {
+        margin-bottom: 20px;
+    }
+
+    .secondForm--visible {
+        margin-bottom: 40px;
+    }
 }
