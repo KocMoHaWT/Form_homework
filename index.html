@@ -3,13 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>Landing_page</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 </head>
 <body>
 	<section class="wrapper">
-		<div class="photo">
+		<div class="contain">
+			<div class="slider" id="slider">
+			</div>
 		</div>
 		<div class="form" id="form_check">
 			<div class="firstForm" id="form_1">
@@ -47,14 +51,6 @@
 						<label>Your Great House</label>
 						<select class="input--border input" id="selectClans" required>
 							<option hidden selected disabled value=""> Select House</option>
-							<option value="Targaryen">Targaryen of King's Landing</option>
-							<option value="Stark">Stark of Winterfell</option>
-							<option value="Lannister">Lannister of Casterly Rock</option>
-							<option value="Arryn">Arryn of the Eyrie</option>
-							<option value="Tully">Tully of Riverrun</option>
-							<option value="Greyjoy">Greyjoy of Pyke</option>
-							<option value="Baratheon">Baratheon of Storm's End</option>
-							<option value="Tyrell">Tyrell of Highgarden</option>
 						</select>
 						<label for="list">Your preferences,hobbies,wishes,ets.</label>
 						<textarea class="input--border" placeholder="I have long TOKILL list" rows="3" id="list" required></textarea>
@@ -66,5 +62,10 @@
 			</div>
 		</div>
 	</section>
-    <script src="./js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="./js/select.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="./js/slider.js"></script>
 </body>

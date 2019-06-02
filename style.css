@@ -10,20 +10,43 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-
 }
 
-.photo {
+.contain {
     width: 50%;
-    background: url("images/maxresdefault.jpg") center;
-    background-size: cover;
+    background-color: black;
+    text-align: center;
 }
+.slides--card {
+    width: 100%;display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+.slick-track {
+    display: flex;
+    justify-content: center;
+
+}
+
+ .slick-slide img {
+     height: 100vh;
+     width: auto;
+     margin: 0 auto;
+ }
 
 .form {
     width: 50%;
     background-color: #202020;
     display: flex;
     flex-direction: column;
+}
+.slick-initialized .slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 @font-face {
@@ -48,7 +71,7 @@ label {
 
 span {
     color: #fef8eb;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 form {
@@ -184,7 +207,9 @@ textarea {
     background-color: #202020;
     border: none;
     outline: none;
-    color: #d3bb89;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif,serif;
 }
 
 .show {
@@ -199,7 +224,7 @@ textarea {
 .input--border {
     padding-bottom: 15px;
     margin-bottom: 5px;
-    border-bottom: 1px solid #c19a49;
+    border-bottom: 1px solid #d3bb89;
 }
 
 .input--invalid {
@@ -226,7 +251,7 @@ input[type="submit"] {
 
 .info {
     padding-left: 5px;
-    width: 30%;
+    width: 27%;
     margin-left: 20%;
     border-left: 1px solid #d3bb89;
 }
@@ -243,19 +268,37 @@ textarea {
     resize: none;
 }
 
+.select2-selection__rendered,
+.select2-selection__arrow,
+.select2-results__options {
+    background-color: #202020;
+    color: #d3bb89;
+}
+.select2-container--default,
+.select2-selection--single,
+.select2-selection__rendered{
+    padding-bottom: 5px;
+    border: none !important;
+    color: #d3bb89 !important;
+    border-bottom: 1px solid #d3bb89 !important;
+}
+
+.select2-selection--single {
+
+}
 
 @media screen and (max-width: 1000px) {
     .wrapper {
         display: block;
     }
 
-    .photo, .form {
+    .slider, .form , .contain{
         width: 100%;
         height: 100%;
 
     }
 
-    .photo {
+    .slider {
         background-size: cover;
     }
 

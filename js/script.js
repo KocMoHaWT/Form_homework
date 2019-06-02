@@ -8,11 +8,13 @@ inputSubmit.onclick = function (e) {
     const form_2 = document.getElementById("form_2");
     e.preventDefault();
     let errors = document.querySelectorAll("input.input--invalid");
-    if(errors.length == 0) {
+    if(errors.length === 0 && inputEmail.value.trim() !== "" && inputPass.value.trim() !== "") {
         form_1.style.display = "none";
         form_2.classList.remove("secondForm--invisible");
         form_2.classList.add("secondForm--visible");
     }
+
+
 };
 
 let checkInputEmail = function() {
@@ -54,5 +56,4 @@ console.log(select.value);
         divError.classList.add("hide");
         console.log("kk");
     }
-
 };
