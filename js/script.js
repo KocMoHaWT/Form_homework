@@ -5,6 +5,7 @@ const inputPass = document.getElementById("password");
 const inputSecondSubmit = document.getElementById("sub_2");
 
 firstForm.onsubmit = function (e) {
+
     const form_1 = document.getElementById("form_1");
     const form_2 = document.getElementById("form_2");
     e.preventDefault();
