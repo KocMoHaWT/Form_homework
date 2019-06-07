@@ -1,9 +1,10 @@
 const inputSubmit = document.getElementById("form_submit");
+const firstForm = document.getElementById("form");
 const inputEmail = document.getElementById("email");
 const inputPass = document.getElementById("password");
 const inputSecondSubmit = document.getElementById("sub_2");
 
-inputSubmit.onclick = function (e) {
+firstForm.onsubmit = function (e) {
     const form_1 = document.getElementById("form_1");
     const form_2 = document.getElementById("form_2");
     e.preventDefault();
@@ -14,8 +15,6 @@ inputSubmit.onclick = function (e) {
         form_2.classList.remove("form--invisible");
         form_2.classList.add("form--visible");
     }
-
-
 };
 
 const checkInputEmail = function() {
