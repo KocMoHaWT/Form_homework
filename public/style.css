@@ -51,7 +51,7 @@ body {
 
 @font-face {
     font-family: "Game Of Thrones";
-    src: url("fonts/Game Of Thrones.ttf");
+    src: url("fonts/Game of Thrones.ttf");
 }
 
 .sign {
@@ -83,7 +83,7 @@ form {
     padding-left: 20%;
 }
 
-.firstForm {
+.formBlock {
     display: flex;
     flex-direction: column;
 }
@@ -222,6 +222,10 @@ input[type="submit"] {
     color: red;
 }
 
+.red {
+    color:red;
+}
+
 .hide {
     display: none;
 }
@@ -312,4 +316,15 @@ textarea {
     .form--visible {
         margin-bottom: 40px;
     }
+}
+
+.end-block {
+    height: 100vh;
+    display: flex;
+}
+
+.end-block h1 {
+    color: #d3bb89;
+    font-size: 60px;
+    margin: auto;
 }

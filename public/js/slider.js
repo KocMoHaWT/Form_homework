@@ -11,24 +11,16 @@ const SLIDER = [
     'Tyrell_of_Highgarden'
 ];
 
-
 $(document).ready(() => {
     const slider  = $('#slider');
-
-
     SLIDER.map((image) => {
         const div = '<div></div>';
        slider.append($(div).addClass('slide').html(
             `<div class="slides--card">
-                <img src="./images/housesToSlider/${image}.png"
-            alt="${image}">
-            </div>
-            
-            `
-
+                <img src="./images/housesToSlider/${image}.png" alt="${image}">
+            </div> `
         ));
     });
-
     $('.slider').slick({
         infinite: true,
         speed: 500,

@@ -16,7 +16,7 @@ $(document).ready(() => {
     let counter  = 1;
     select.select2({});
     dataClans.map((nameClan) => {
-        const newOp = new Option(nameClan,counter++ + "",false,false);
+        const newOp = new Option(nameClan,dataClans[counter++],false,false);
         select.append(newOp);
     });
     select.on('select2:select', function () {
