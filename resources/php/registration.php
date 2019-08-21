@@ -2,14 +2,20 @@
 session_start();
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+
     switch (htmlentities($_POST['form'])) {
         case 'form1':
             addFirstFormData($_POST['email'], $_POST['password'], isset($_POST['checkbox']));
             break;
-        case 'form2':
-            addSecondFormData($_POST['name'], $_POST['houseSelect'], $_POST['textArea']);
-            break;
     }
+    $name = isset($_POST['name']) ? $_POST['name'] : false;
+    $house = isset($_POST['houseSelect']) ? $_POST['houseSelect'] : false;
+    $textArea = isset($_POST['textArea']) ? $_POST['textArea'] : false;
+    if($name && $house && $textArea) {
+        addSecondFormData($name,$house, $textArea);
+    }
+
 }
 
 function addFirstFormData($email, $password, $checkbox = "off") {

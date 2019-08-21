@@ -26,7 +26,7 @@
                         <input type="hidden" name="form" value="form1">
 						<label for="email">Enter your email</label>
 						<input class="input--border input"
-							   type="text"
+							   type="email"
 							   placeholder="arya@westoros.com"
 							   id="email"
 							   name="email"

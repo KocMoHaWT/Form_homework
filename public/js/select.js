@@ -13,14 +13,22 @@ const dataClans = [
 
 $(document).ready(() => {
     const select = $('#selectClans');
-    let counter  = 1;
+
     select.select2({});
     dataClans.map((nameClan) => {
-        const newOp = new Option(nameClan,dataClans[counter++],false,false);
+        const newOp = new Option(nameClan,nameClan,false,false);
         select.append(newOp);
     });
-    select.on('select2:select', function () {
-        $('#slider').slick('slickGoTo',+this.value);
+
+    select.on('change', function (e) {
+        let clanId;
+        for(let i = 0; i < dataClans.length; i++){
+            if(dataClans[i] === this.value) {
+                clanId = i + 1;
+            }
+
+        }
+        $('#slider').slick('slickGoTo',clanId);
     });
 
 });

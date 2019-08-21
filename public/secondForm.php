@@ -24,7 +24,7 @@
                 <div class="info">
                     <span>You've successfully joined the game. Tell us more about yourself</span>
                 </div>
-                <form class="form_check" method="post" action="../resources/php/registration.php">
+                <form class="form_check">
                     <input type="hidden" name="form" value="form2">
                     <label for="name">What are you</label>
                     <span>Alpha-numeric username</span>
@@ -41,7 +41,7 @@
                         }
                         ?>
                     </div>
-                    <label>Your Great House</label>
+                    <label for="houseSelect">Your Great House</label>
                     <select class="input--border input"
                             id="selectClans"
                             name="houseSelect"
@@ -86,5 +86,6 @@
     <script src="js/select.js"></script>
     <script src="js/validation.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/handleSecondForm.js"></script>
 </body>
 </html>
